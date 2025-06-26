@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+pydantic = "*"
+python-multipart = "*"
+
+[dev-packages]
+pytest = "*"
+httpx = "*"
+black = "*"
+flake8 = "*"
+
+[requires]
+python_version = "3.8"

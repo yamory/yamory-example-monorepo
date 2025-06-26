@@ -1,0 +1,20 @@
+{
+    "name": "npm-util-workspace",
+    "version": "1.0.0",
+    "description": "A simple application using npm workspaces",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "npm run dev --workspace=frontend",
+        "build": "npm run build --workspaces --if-present",
+        "start:mock": "npm run start --workspace=mock-api",
+        "dev:all": "concurrently \"npm run start --workspace=mock-api\" \"npm run dev --workspace=frontend\"",
+        "clean": "npm run clean --workspaces --if-present",
+        "test": "npm run test --workspaces --if-present"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

@@ -1,0 +1,9 @@
+# Simple Weather App - 依存関係
+# HTTP requests library
+requests>=2.28.0
+
+# Optional: より詳細なHTTPクライアント機能
+urllib3>=1.26.0
+
+# Optional: JSON処理の拡張（標準ライブラリのjsonで十分ですが、パフォーマンス向上のため）
+simplejson>=3.18.0

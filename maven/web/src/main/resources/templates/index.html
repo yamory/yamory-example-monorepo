@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maven Monorepo Utility - ホーム</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">Maven Monorepo Utility</a>
+        <div class="navbar-nav">
+          <a class="nav-link" href="/">ホーム</a>
+          <a class="nav-link" href="/users">ユーザー管理</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <h3>Welcome to Maven Monorepo Utility</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                これはマルチプロジェクト構成のMavenプロジェクトのデモアプリケーションです。
+              </p>
+              <p>以下の機能を含んでいます：</p>
+              <ul>
+                <li><strong>Common</strong>: 共通ユーティリティとモデル</li>
+                <li><strong>Service</strong>: ビジネスロジック</li>
+                <li><strong>Web</strong>: Spring Boot Webアプリケーション</li>
+                <li><strong>CLI</strong>: コマンドラインインターフェース</li>
+              </ul>
+              <a href="/users" class="btn btn-primary">ユーザー管理を開始</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+[tool.uv.workspace]
+# Define workspace members
+members = [
+    "packages/core",
+    "packages/web-api",
+    "packages/cli",
+    "packages/worker"
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]

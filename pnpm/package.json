@@ -1,0 +1,17 @@
+{
+    "name": "pnpm-workspace-example",
+    "version": "1.0.0",
+    "description": "A simple multi-workspace application using pnpm",
+    "scripts": {
+        "dev": "concurrently \"pnpm --filter backend dev\" \"pnpm --filter frontend dev\"",
+        "build": "pnpm --filter shared build && pnpm --filter backend build && pnpm --filter frontend build",
+        "clean": "pnpm -r clean"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "pnpm": ">=8.0.0"
+    }
+}

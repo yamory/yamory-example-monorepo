@@ -1,0 +1,5 @@
+rootProject.name = 'gradle-monorepo-util'
+
+include 'core'
+include 'app'
+include 'web'
