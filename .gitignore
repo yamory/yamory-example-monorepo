@@ -128,6 +128,16 @@ jspm_packages/
 .env.test.local
 .env.production.local
 
+# Archive files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
 # parcel-bundler cache
 .cache
 .parcel-cache
@@ -173,7 +183,7 @@ temp/
 # Gradle
 .gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar
+!**/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
@@ -187,7 +197,7 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
+!**/.mvn/wrapper/maven-wrapper.jar
 
 # SBT
 .bsp/
@@ -386,16 +396,6 @@ Cargo.lock
 *.bak
 *.backup
 *.old
-
-# Archive files
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
 
 # Database files
 *.sqlite
